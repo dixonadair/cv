@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function updateTextInput(val) {
+        document.getElementById('ageInput').value=val;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>My Contact Details</h1>
+    <p>Email: my-email@gmail.com</p>
+    <p>Phone: 123-456-7890</p>
+    <a href="index.html">Back to Homepage</a>
+
+    <hr>
+
+    <!-- To see all the HTML form input types: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+    <!-- The action attribute says what will happen when the form is submitted -->
+    <form class="" action="index.html" method="post">
+      <label>Your Name:</label>
+      <input type="text" name="" value="">
+      <input type="color" name="" value=""> <!-- Color picker -->
+      <br><br>
+
+      <label>Do you want to sign up to the email list?</label>
+      <input type="checkbox" name="" value="">
+      <br><br>
+
+      <label>Please tell us what day you are viewing this site</label>
+      <input type="date" name="" value="">
+      <br><br>
+
+      <label>What is your email address?</label>
+      <input type="email" name="" value="">
+      <br><br>
+
+      <label>Your long answer here</label><br>
+      <textarea name="name" rows="8" cols="50"></textarea>
+      <br><br>
+
+      <label>What is your age?</label>
+      <input type="range" min="0" max="80" value="1" id="ageSlider" oninput="updateTextInput(this.value)">
+      <input type="text" id="ageInput" value="1">
+      <br><br>
+
+      <label>Please upload a file</label>
+      <input type="file" name="" value="">
+      <br><br>
+
+      <label>Please choose from this mutually-exclusive set of options</label>
+      <br><label>Option 1</label><input type="radio" name="Option 1" value="Option 1">
+      <br><label>Option 2</label><input type="radio" name="Option 1" value="Option 2">
+      <br><label>Option 3</label><input type="radio" name="Option 1" value="Option 3">
+      <br><br>
+
+      <label>Password:</label>
+      <input type="password" name="" value="">
+      <br><br>
+
+      <input type="submit" name="">
+    </form>
+  </body>
+
+</html>
